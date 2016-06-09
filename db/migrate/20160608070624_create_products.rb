@@ -4,7 +4,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.integer :quantity
-      t.string :price
+      t.integer :price
 
       t.timestamps null: false
     end
