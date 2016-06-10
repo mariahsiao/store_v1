@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root "products#index"
 
-  resources :carts
+  resources :carts do
+    collection do
+      post :checkout
+    end
+  end
 
   devise_for :users
   namespace :admin do
