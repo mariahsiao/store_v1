@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       get :pay_with_credit_card
     end
   end
+  resources :items, controller: "cart_items"
 
   root "products#index"
 
