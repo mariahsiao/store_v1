@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  namespace :account do
+    resources :orders
+  end
+
   resources :orders do
     member do
       get :pay_with_credit_card

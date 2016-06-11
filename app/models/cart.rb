@@ -19,7 +19,7 @@ class Cart < ActiveRecord::Base
   end
 
   def find_cart_item(product)
-    cart_items.find_by(product_id :product)
+    cart_items.find_by(product_id: product)
   end
 
   def clean!
