@@ -35,7 +35,7 @@ class OrdersController < ApplicationController
   def pay2go_cc_notify
     @order = Order.find_by_token(params[:id])
 
-    if params["status"] == "SUCCESS"
+    if params["Status"] == "SUCCESS"
 
       @order.make_payment!
 
