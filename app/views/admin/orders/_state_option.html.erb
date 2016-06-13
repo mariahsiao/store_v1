@@ -1,6 +1,6 @@
 <div class="padding:10px; float:right;">
 
-  <% case order.aasm_sate %>
+  <% case order.aasm_state %>
   <% when "order_placed" %>
     <%= link_to("取消訂單",
                 cancel_admin_order_path(order),
