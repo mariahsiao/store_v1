@@ -80,5 +80,5 @@ Rails.application.configure do
   config.after_initialize do
     Pay2go.integration_mode = :development
   end
-  config.action_mailer.default)url_options = { host: 'shrouded-sierra-99598.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'shrouded-sierra-99598.herokuapp.com'}
 end
