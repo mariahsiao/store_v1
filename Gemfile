@@ -51,6 +51,8 @@ gem "letter_opener", group: :development
 
 gem "fog"
 
+gem "delayed_job_active_record"
+
 gem "pay2go"
 
 gem "figaro"
