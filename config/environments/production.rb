@@ -81,4 +81,13 @@ Rails.application.configure do
     Pay2go.integration_mode = :development
   end
   config.action_mailer.default_url_options = { host: 'shrouded-sierra-99598.herokuapp.com'}
+  config.action_mailer.delivery_methid = :smtp
+  config.action_mailer.smtp_settings = {
+    port:           587,
+    addresses:      "smtp.mailgun.org",
+    user_name:      ENV["mailgun_user"],
+    password:       ENV["mailgun_secret"],
+    domain:         "sandboxf9731709195740dbba7d61864607d48d.mailgun.org"
+    authentication: :plain,
+  }
 end
