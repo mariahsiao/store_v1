@@ -19,3 +19,6 @@
 
 config/database.yml
 public/uplods
+
+# Ignore application configuration
+/config/application.yml
