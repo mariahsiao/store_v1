@@ -37,11 +37,7 @@ class Order < ActiveRecord::Base
     end
   end
 
-  before_create :generate_token
-
-  def generate_token
-    self.token = SecureRandom.uuid
-  end
+  include Tokenable
 
   def build_item_cache_from_cart(cart)
     cart.items.each do |cart_item|
